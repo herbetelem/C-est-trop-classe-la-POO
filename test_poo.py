@@ -17,33 +17,41 @@ class DataAnalyst:
     def suivreFormation(self):
         self.motivation -= random.randint(5, 25)
         self.progression += random.randint(20, 30)
+        print(f"Tour : {self.tour}")
         print("La méthode suivreFormation() a été utilisée.")
         print(f"motivation vaut maintenant {self.motivation}")
         print(f"progression vaut maintenant {self.progression}")
+        self.tour += 1
         
     # method qui update les stats
     def bosserPlus(self):
         self.motivation += random.randint(10, 30)
         self.progression += random.randint(10, 30)
+        print(f"Tour : {self.tour}")
         print("La méthode bosserPlus() a été utilisée.")
         print(f"motivation vaut maintenant {self.motivation}")
         print(f"progression vaut maintenant {self.progression}")
+        self.tour += 1
         
     # method qui update les stats
     def echouer(self):
         self.motivation -= random.randint(20, 40)
         self.progression += random.randint(20, 40)
+        print(f"Tour : {self.tour}")
         print("La méthode echouer() a été utilisée.")
         print(f"motivation vaut maintenant {self.motivation}")
         print(f"progression vaut maintenant {self.progression}")
+        self.tour += 1
         
     # method qui update les stats
     def reussir(self):
         self.motivation += random.randint(20, 40)
         self.progression += random.randint(10, 20)
+        print(f"Tour : {self.tour}")
         print("La méthode reussir() a été utilisée.")
         print(f"motivation vaut maintenant {self.motivation}")
         print(f"progression vaut maintenant {self.progression}")
+        self.tour += 1
         
         
         
